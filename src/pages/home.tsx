@@ -7,7 +7,6 @@ export default function Home() {
 
   const titleRef = useRef<null | HTMLInputElement>(null);
   const messageRef = useRef<null | HTMLTextAreaElement>(null);
-  const firstRef = useRef<null | HTMLInputElement>(null);
   const lastRef = useRef<null | HTMLInputElement>(null);
   const priceRef = useRef<null | HTMLInputElement>(null);
 
@@ -15,7 +14,7 @@ export default function Home() {
     e.preventDefault();
 
     navigate(
-      `/rifa/${titleRef.current?.value}/${messageRef.current?.value}/${firstRef.current?.value}/${lastRef.current?.value}/${priceRef.current?.value}`
+      `/rifa/${titleRef.current?.value}/${messageRef.current?.value}/${lastRef.current?.value}/${priceRef.current?.value}`
     );
   }
 
@@ -67,29 +66,16 @@ export default function Home() {
             />
           </div>
 
-          <div className="grid grid-cols-3 gap-6">
-            <div className="flex flex-col">
-              <label htmlFor="first" className="font-semibold">
-                Início
-              </label>
-              <input
-                type="number"
-                id="first"
-                className="border rounded p-2"
-                placeholder="Insira o número inicial da rifa"
-                ref={firstRef}
-                required
-              />
-            </div>
+          <div className="grid grid-cols-2 gap-6">
             <div className="flex flex-col">
               <label htmlFor="last" className="font-semibold">
-                Final
+                Quantidade
               </label>
               <input
                 type="number"
                 id="last"
                 className="border rounded p-2"
-                placeholder="Insira o número final da rifa"
+                placeholder="Insira a quantidade de rifas"
                 ref={lastRef}
                 required
               />

@@ -12,7 +12,7 @@ createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route
-          path="/rifa/:titulo/:mensagem/:inicio/:final/:valor"
+          path="/rifa/:titulo/:mensagem/:final/:valor"
           element={<Raffle />}
         />
       </Routes>

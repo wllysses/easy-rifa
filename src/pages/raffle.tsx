@@ -4,20 +4,22 @@ import { RaffleCard } from "../components/raffle-card";
 export default function Raffle() {
   const navigate = useNavigate();
 
-  const { titulo, mensagem, inicio, final, valor } = useParams();
+  const { titulo, mensagem, final, valor } = useParams();
 
   const valores = {
     titulo,
     mensagem,
-    inicio: parseInt(inicio!),
     final: parseInt(final!),
     valor: Number(valor!),
   };
 
+  const valorFinal = valor?.includes(",")
+    ? Number(valor.replace(",", "."))
+    : Number(valor);
+
   console.log({
     titulo,
     mensagem,
-    inicio,
     final,
     valor,
   });
@@ -44,7 +46,7 @@ export default function Raffle() {
           titulo={valores.titulo!}
           mensagem={valores.mensagem!}
           final={index!}
-          valor={valores.valor}
+          valor={valorFinal}
         />
       ))}
     </div>

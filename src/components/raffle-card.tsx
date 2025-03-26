@@ -56,39 +56,5 @@ export function RaffleCard({
         </div>
       </div>
     </div>
-    // <div className="border pb-1 print:break-inside-avoid">
-    //   <div className="flex">
-    //     <div className="max-w-56 border-r pr-2">
-    //       <div className="mb-2">
-    //         <div>Nome:__________________________</div>
-    //         <div>_________________________________</div>
-    //         <div>Endereço:______________________</div>
-    //         <div>_________________________________</div>
-    //         <div>Telefone:________________________</div>
-    //         <div className="flex justify-between items-center mt-2">
-    //           <div className="font-bold">
-    //             {valor.toLocaleString("pt-BR", {
-    //               style: "currency",
-    //               currency: "BRL",
-    //             })}
-    //           </div>
-    //           <div className="border border-black px-2 py-1 text-right min-w-[60px]">
-    //             {String(final).padStart(3, "0")}
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //     <div className="flex-1 pl-2">
-    //       <div className="text-center font-bold mb-2">{titulo}</div>
-    //       <div className="text-sm mb-4">{mensagem}</div>
-    //       <div className="flex justify-between items-center mt-8">
-    //         <div className="font-bold">R$ {valor}</div>
-    //         <div className="border border-black px-2 py-1 text-right min-w-[60px]">
-    //           {String(final).padStart(3, "0")}
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
   );
 }
