@@ -97,7 +97,7 @@ export default function Home() {
 
           <button
             type="submit"
-            className="p-2 bg-emerald-500 rounded text-white font-bold cursor-pointer hover:bg-emerald-600"
+            className="p-3 bg-emerald-500 rounded text-white font-bold cursor-pointer hover:bg-emerald-600"
           >
             Gerar rifa
           </button>
